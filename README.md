@@ -7,7 +7,7 @@ Chuck is a simple in-app HTTP inspector for Android OkHttp clients. Chuck interc
 
 Apps using Chuck will display a notification showing a summary of ongoing HTTP activity. Tapping on the notification launches the full Chuck UI. Apps can optionally suppress the notification, and launch the Chuck UI directly from within their own interface. HTTP interactions and their contents can be exported via a share intent.
 
-The main Chuck activity is launched in its own task, allowing it to be displayed alongside the host app UI using Android 7.x multi-window support.
+The main Chuck activity is launched in its task, allowing it to be displayed alongside the host app UI using Android 7.x multi-window support.
 
 ![Multi-Window](assets/multiwindow.gif)
 
@@ -44,7 +44,7 @@ FAQ
 - Why are retries and redirects not being captured discretely?
 - Why are my encoded request/response bodies not appearing as plain text?
 
-Please refer to [this section of the OkHttp wiki](https://github.com/square/okhttp/wiki/Interceptors#choosing-between-application-and-network-interceptors). You can choose to use Chuck as either an application or network interceptor, depending on your requirements.
+Please refer to [this section of the OkHttp wiki](https://github.com/square/okhttp/wiki/Interceptors#choosing-between-application-and-network-interceptors). You can choose to use Chuck as either an application or a network interceptor, depending on your requirements.
 
 Acknowledgements
 ----------------
